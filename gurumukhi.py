@@ -87,8 +87,8 @@ def evaluate(model, data_loader, criterion, device):
     return running_loss / len(data_loader), 100 * correct / total
 
 def main():
-    train_path = '/Users/ms/Downloads/train'
-    val_path = '/Users/ms/Downloads/val'
+    train_path = './train'
+    val_path = './val'
     num_classes = 10
     images_train, labels_train, image_width, image_height = load_data(train_path, num_classes)
     images_val, labels_val, _, _ = load_data(val_path, num_classes)
